@@ -5,6 +5,7 @@
   "spacing": 4,
 
   "modules-left": [
+    "custom/sep2",
     "custom/arch",
     "custom/sep",
     "hyprland/workspaces",
@@ -26,7 +27,8 @@
     "custom/sep",
     "custom/power",
     "custom/sep",
-    "tray"
+    "tray",
+    "custom/sep2"
   ],
 
   "hyprland/workspaces": {
@@ -43,16 +45,19 @@
     "format": " {:%a %d %b %I:%M %p} "
   },
 
-  "pulseaudio": {
-    "format": "󰕾 {volume}%",
-    "format-muted": "󰝟",
-    "scroll-step": 5,
-    "on-click": "pavucontrol"
+"pulseaudio": {
+  "format": "<span size='13000' rise='900'>{icon}</span> {volume}%",
+  "format-muted": "<span size='13000' rise='900'>{icon}</span> {volume}%>",
+  "format-icons": {
+    "default": ["", "", ""]
   },
+  "markup": true
+},
 
- "hyprland/language": {
-  "format": "  {} ",
-  "tooltip": false
+"hyprland/language": {
+  "format": "<span size='13000' rise='1000'></span> {}",
+  "tooltip": false,
+  "markup": true
 },
 
   "tray": {
@@ -62,6 +67,11 @@
 
   "custom/sep": {
     "format": "//",
+    "tooltip": false
+  },
+
+    "custom/sep2": {
+    "format": " ",
     "tooltip": false
   },
 
@@ -83,7 +93,7 @@
 
   "custom/discord": {
     "format": "",
-    "on-click": "vesktop"
+    "on-click": "discord"
   },
 
   "custom/cider": {
@@ -92,7 +102,7 @@
   },
 
   "custom/arch": {
-    "format": " ",
+    "format": "",
     "on-click": "rofi -show drun -config ~/.config/rofi/launcher.rasi"
   }
 }
