@@ -1,0 +1,98 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "spacing": 4,
+
+  "modules-left": [
+    "custom/arch",
+    "custom/sep",
+    "hyprland/workspaces",
+    "custom/sep",
+    "custom/firefox",
+    "custom/telegram",
+    "custom/discord",
+    "custom/cider"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "hyprland/language",
+    "custom/sep",
+    "pulseaudio",
+    "custom/sep",
+    "custom/power",
+    "custom/sep",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "active": "★",
+    "default": "☆"
+  }
+},
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%a %d %b %I:%M %p} "
+  },
+
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰝟",
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+ "hyprland/language": {
+  "format": "  {} ",
+  "tooltip": false
+},
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "custom/sep": {
+    "format": "//",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "bash ~/.config/rofi/powermenu.sh",
+    "tooltip": false
+  },
+
+  "custom/firefox": {
+    "format": "󰈹",
+    "on-click": "firefox"
+  },
+
+  "custom/telegram": {
+    "format": "",
+    "on-click": "Telegram"
+  },
+
+  "custom/discord": {
+    "format": "",
+    "on-click": "vesktop"
+  },
+
+  "custom/cider": {
+    "format": "",
+    "on-click": "cider"
+  },
+
+  "custom/arch": {
+    "format": " ",
+    "on-click": "rofi -show drun -config ~/.config/rofi/launcher.rasi"
+  }
+}

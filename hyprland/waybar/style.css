@@ -1,0 +1,59 @@
+* {
+  font-family: Monocraft, IBM Plex Mono, Symbols Nerd Font;
+  font-size: 15px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #111014;
+  color: #e0def4;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  color: #ffffff;
+}
+
+#workspaces button.active {
+  color: #a4e3d3;
+}
+
+#workspaces button:hover {
+  background: transparent;
+}
+
+#custom-sep {
+  color: #a4e3d3;
+  padding: 0 4px;
+}
+
+#clock {
+  color: #e0def4;
+}
+
+#pulseaudio {
+  color: #e0def4;
+}
+
+#pulseaudio.muted {
+  color: #000000;
+}
+
+#keyboard-state {
+  color: #e0def4;
+}
+
+#tray {
+  padding-right: 6px;
+}
+
+#custom-power,
+#custom-firefox,
+#custom-telegram,
+#custom-discord,
+#custom-cider,
+#custom-arch {
+  color: #a4e3d3;
+  padding: 0 6px;
+}
